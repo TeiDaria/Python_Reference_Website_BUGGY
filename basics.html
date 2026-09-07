@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник Python</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Щас будем ломать -->
+<header>
+    <div class="icon-title">
+        <img width="60" height="82" src="https://pyfessor.wordpress.com/wp-content/uploads/2023/06/trafareti-zmeya4_1-transformed.png" class="custom-logo" alt="Справочник Python">
+        <a href="index.html" class="site-title">Справочник Python</a>
+    </div>
+    <!-- Бургер-меню для мобильных -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <span class="burger-line"></span>
+    </label>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Обратная связь</a></li>
+            <li><a href="https://t.me/Teidara">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <!-- Герой-секция -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Основы Python</h1>
+            <p>Изучите фундаментальные концепции языка Python через интерактивные примеры и наглядные объяснения</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">раздела</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">примеров</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">практика</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-animation">
+                <div class="code-line">print("Hello, Python!")</div>
+                <div class="code-line">x = 42</div>
+                <div class="code-line">if x > 0:</div>
+                <div class="code-line indent">print("Positive number")</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навигация по разделам -->
+    <section class="topics-nav">
+        <div class="topic-card" data-topic="variables">
+            <div class="topic-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Переменные</h3>
+            <p>Хранение и работа с данными</p>
+            <span class="topic-badge">Основы</span>
+        </div>
+
+        <div class="topic-card" data-topic="types">
+            <div class="topic-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Типы данных</h3>
+            <p>Числа, строки, списки и словари</p>
+            <span class="topic-badge">Фундамент</span>
+        </div>
+
+        <div class="topic-card" data-topic="conditions">
+            <div class="topic-icon">
+                <i class="fas fa-code-branch"></i>
+            </div>
+            <h3>Условия</h3>
+            <p>Логика и принятие решений</p>
+            <span class="topic-badge">Логика</span>
+        </div>
+
+        <div class="topic-card" data-topic="loops">
+            <div class="topic-icon">
+                <i class="fas fa-redo"></i>
+            </div>
+            <h3>Циклы</h3>
+            <p>Повторение и автоматизация</p>
+            <span class="topic-badge">Автоматизация</span>
+        </div>
+    </section>
+
+    <!-- Контент разделов -->
+    <section class="topics-content">
+        <!-- Переменные -->
+        <article class="topic-section active" id="variables-content">
+            <div class="section-header">
+                <h2><i class="fas fa-code"></i> Переменные в Python</h2>
+                <p>Переменные - это контейнеры для хранения данных. В Python не нужно объявлять тип переменной.</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="explanation-card">
+                    <h3>Что такое переменная?</h3>
+                    <p>Переменная — это именованная область памяти, которая хранит данные. Представьте её как коробку с названием, в которой лежит значение.</p>
+                    <div class="example-visual">
+                        <div class="variable-box">
+                            <span class="var-name">age</span>
+                            <span class="var-value">25</span>
+                        </div>
+                        <div class="variable-box">
+                            <span class="var-name">name</span>
+                            <span class="var-value">"Alice"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="code-example">
+                    <h3>Примеры использования</h3>
+                    <pre class="code-block"><code># Простые переменные
+age = 25
+name = "Alice"
+height = 1.75
+is_student = True
+
+# Множественное присваивание
+x, y, z = 1, 2, 3
+
+# Динамическая типизация
+variable = 10      # Сначала число
+variable = "text"  # Теперь строка
+
+print(f"Имя: {name}, Возраст: {age}")</code></pre>
+                    <div class="code-output">
+                        <strong>Вывод:</strong> Имя: Alice, Возраст: 25
+                    </div>
+                </div>
+            </div>
+
+            <div class="practice-section">
+                <h3>Попробуйте сами</h3>
+                <div class="interactive-example">
+                    <div class="code-editor">
+                        <textarea class="live-code" placeholder="Введите ваш код здесь...">name = "Ваше имя"
+age = 20
+print(f"Привет, {name}! Тебе {age} лет.")</textarea>
+                        <button class="run-code">Запустить код</button>
+                    </div>
+                    <div class="output-container">
+                        <strong>Результат:</strong>
+                        <div class="live-output"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Типы данных -->
+        <article class="topic-section" id="types-content">
+            <div class="section-header">
+                <h2><i class="fas fa-cogs"></i> Типы данных в Python</h2>
+                <p>Python поддерживает различные типы данных для разных видов информации.</p>
+            </div>
+
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-header">
+                        <span class="type-icon">#</span>
+                        <h4>Числа</h4>
+                    </div>
+                    <div class="type-examples">
+                        <code>age = 25</code>
+                        <code>price = 19.99</code>
+                        <code>count = 1_000_000</code>
+                    </div>
+                    <p><strong>int</strong> - целые числа, <strong>float</strong> - числа с плавающей точкой</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">
+                        <span class="type-icon">"</span>
+                        <h4>Строки</h4>
+                    </div>
+                    <div class="type-examples">
+                        <code>name = "Python"</code>
+                        <code>message = 'Hello'</code>
+                        <code>text = """Многострочный текст"""</code>
+                    </div>
+                    <p>Текст в кавычках, есть несколько вариаций кавычек</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">
+                        <span class="type-icon">[]</span>
+                        <h4>Списки</h4>
+                    </div>
+                    <div class="type-examples">
+                        <code>numbers = [1, 2, 3]</code>
+                        <code>mixed = [1, "text", True]</code>
+                    </div>
+                    <p>Упорядоченные изменяемые коллекции</p>
+                </div>
+
+                <div class="type-card">
+                    <div class="type-header">
+                        <span class="type-icon">{}</span>
+                        <h4>Словари</h4>
+                    </div>
+                    <div class="type-examples">
+                        <code>person = {"name": "Alice", "age": 25}</code>
+                    </div>
+                    <p>Коллекции пар ключ-значение</p>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h3>Работа с типами данных</h3>
+                <pre class="code-block"><code># Проверка типа
+print(type(42))        # &lt;class 'int'&gt;
+print(type("Hello"))   # &lt;class 'str'&gt;
+
+# Преобразование типов
+number = "123"
+converted = int(number)
+print(f"Преобразовано: {converted}")  # Преобразовать в число
+
+# Операции со строками
+text = "Python"
+print(text.upper())    # PYTHON
+print(len(text))       # 6
+
+# Работа со списками
+fruits = ["apple", "banana"]
+print("Исходный список:", fruits)
+fruits.append("orange")
+print("После добавления:", fruits)
+print("Первый элемент:", fruits[0])
+print("Все элементы списка:")
+for fruit in fruits:
+    print(f" - {fruit}")</code></pre>
+
+                <button class="run-code">Запустить код</button>
+
+                <div class="output-container">
+                    <strong>Результат выполнения:</strong>
+                    <div class="example-output"></div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Условия -->
+        <article class="topic-section" id="conditions-content">
+            <div class="section-header">
+                <h2><i class="fas fa-code-branch"></i> Условные конструкции</h2>
+                <p>Управление потоком выполнения программы на основе условий.</p>
+            </div>
+
+            <div class="code-example">
+                <h3>Примеры условий</h3>
+                <pre class="code-block"><code># Простое условие
+age = 18
+if age >= 18:
+    print("Совершеннолетний")
+else:
+    print("Несовершеннолетний")
+
+# Множественные условия
+score = 85
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+else:
+    grade = "F"
+
+print(f"Оценка: {grade}")
+
+# Сложные условия
+temperature = 25
+is_sunny = True
+
+if temperature > 20 and is_sunny:
+    print("Идеальная погода для прогулки!")</code></pre>
+
+                <button class="run-code">Запустить код</button>
+
+                <div class="output-container">
+                    <strong>Результат выполнения:</strong>
+                    <div class="example-output"></div>
+                </div>
+            </div>
+        </article>
+        <!-- Циклы -->
+        <article class="topic-section" id="loops-content">
+            <div class="section-header">
+                <h2><i class="fas fa-redo"></i> Циклы в Python</h2>
+                <p>Повторение действий - основа автоматизации в программировании.</p>
+            </div>
+
+            <div class="loops-comparison">
+                <div class="loop-type">
+                    <h3>Цикл for</h3>
+                    <p>Для перебора последовательностей</p>
+                    <pre class="code-block"><code># Перебор списка
+fruits = ["apple", "banana", "orange"]
+for fruit in fruits:
+    print(fruit)
+
+# Цикл с range
+for i in range(5):
+    print(f"Итерация {i}")
+
+# Перебор словаря
+person = {"name": "Alice", "age": 25}
+for key, value in person.items():
+    print(f"{key}: {value}")</code></pre>
+                </div>
+
+                <div class="loop-type">
+                    <h3>Цикл while</h3>
+                    <p>Пока условие истинно</p>
+                    <pre class="code-block"><code># Простой цикл while
+count = 5
+while count > 0:
+    print(count)
+    count -= 1
+print("Старт!")
+
+# Цикл с break
+while True:
+    user_input = input("Введите 'stop' для выхода: ")
+    if user_input == "stop":
+        break
+    print(f"Вы ввели: {user_input}")</code></pre>
+                </div>
+            </div>
+
+            <div class="interactive-demo">
+                <h3>Интерактивный пример</h3>
+                <div class="demo-controls">
+                    <button class="demo-btn" data-loop="for">Запустить цикл for</button>
+                    <button class="demo-btn" data-loop="while">Запустить цикл while</button>
+                </div>
+                <div class="demo-output"></div>
+            </div>
+        </article>
+    </section>
+
+    <!-- Быстрый переход -->
+    <div class="quick-nav">
+        <button class="nav-btn" data-target="variables-content">
+            <i class="fas fa-code"></i>
+            <span>Переменные</span>
+        </button>
+        <button class="nav-btn" data-target="types-content">
+            <i class="fas fa-cogs"></i>
+            <span>Типы данных</span>
+        </button>
+        <button class="nav-btn" data-target="conditions-content">
+            <i class="fas fa-code-branch"></i>
+            <span>Условия</span>
+        </button>
+        <button class="nav-btn" data-target="loops-content">
+            <i class="fas fa-redo"></i>
+            <span>Циклы</span>
+        </button>
+    </div>
+</main>
+
+<footer class="grid-footer">
+    <div class="footer-content">
+        <!-- Быстрые ссылки -->
+        <div class="footer-section quick-links">
+            <h3>Быстрые ссылки</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="basics.html">Основы Python</a></li>
+                <li><a href="modules.html">Модули и библиотеки</a></li>
+                <li><a href="practice.html">Мини-практикум</a></li>
+                <li><a href="contacts.html">Форма обратной связи</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer-section contact-us">
+            <h3>Контакты</h3>
+            <div class="contact-info">
+                <p>ул. Тверская, 14<br>Москва, 117513, Россия</p>
+                <p>+7 987 123-45-67</p>
+                <p>+7 987 123-45-68</p>
+                <p>example@mail.ru</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://t.me/Teidara" class="social-btn" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://github.com/my_github" class="social-btn" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://youtube.com/my_channel" class="social-btn" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://vk.com/my_profile" class="social-btn" target="_blank">
+            <i class="fab fa-vk"></i>
+        </a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2025 Student MIREA. All Rights Reserved</p>
+    </div>
+</footer>
+<script src="js/basics.js"></script>
+</body>
+</html>

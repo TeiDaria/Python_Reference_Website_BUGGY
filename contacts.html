@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник Python</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style_contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="icon-title">
+        <img width="60" height="82" src="https://pyfessor.wordpress.com/wp-content/uploads/2023/06/trafareti-zmeya4_1-transformed.png" class="custom-logo" alt="Справочник Python">
+        <a href="index.html" class="site-title">Справочник Python</a>
+    </div>
+
+    <!-- Бургер-меню для мобильных -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <span class="burger-line"></span>
+    </label>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Обратная связь</a></li>
+            <li><a href="https://t.me/Teidara">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+    <section class="feedback-container">
+        <div class="feedback-header">
+            <h1>Обратная связь</h1>
+            <p>Есть вопросы или предложения?<br>Напишите нам — мы обязательно ответим!</p>
+        </div>
+
+        <div class="feedback-content">
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Тема сообщения</label>
+                    <div class="input-container">
+                        <input type="text" id="subject" name="subject" placeholder="О чём вы хотите написать?">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <div class="textarea-container">
+                        <textarea id="message" name="message" placeholder="Подробно опишите ваш вопрос или предложение..." rows="6"></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit" id="submitBtn">
+                        <span class="btn-text">Отправить сообщение</span>
+                        <div class="btn-loader" id="btnLoader">
+                            <div class="loader-spinner"></div>
+                        </div>
+                    </button>
+                </div>
+            </form>
+
+            <div class="contact-inform">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Время ответа</h3>
+                    <p>Обычно мы отвечаем в течение 24 часов</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Поддержка</h3>
+                    <p>Мы готовы помочь с любыми вопросами по Python</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Предложения</h3>
+                    <p>Ваши идеи помогают нам становиться лучше</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно успешной отправки -->
+        <div class="modal-overlay" id="successModal">
+            <div class="modal-content">
+                <div class="modal-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Сообщение отправлено!</h2>
+                <p>Мы получили ваше сообщение и свяжемся с вами в ближайшее время.</p>
+                <button class="btn btn-modal" id="modalCloseBtn">Понятно</button>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="grid-footer">
+    <div class="footer-content">
+        <!-- Быстрые ссылки -->
+        <div class="footer-section quick-links">
+            <h3>Быстрые ссылки</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="basics.html">Основы Python</a></li>
+                <li><a href="modules.html">Модули и библиотеки</a></li>
+                <li><a href="practice.html">Мини-практикум</a></li>
+                <li><a href="contacts.html">Форма обратной связи</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer-section contact-us">
+            <h3>Контакты</h3>
+            <div class="contact-info">
+                <p>ул. Тверская, 14<br>Москва, 117513, Россия</p>
+                <p>+7 987 123-45-67</p>
+                <p>+7 987 123-45-68</p>
+                <p>example@mail.ru</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://t.me/Teidara" class="social-btn" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://github.com/my_github" class="social-btn" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://youtube.com/my_channel" class="social-btn" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://vk.com/my_profile" class="social-btn" target="_blank">
+            <i class="fab fa-vk"></i>
+        </a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2025 Student MIREA. All Rights Reserved</p>
+    </div>
+</footer>
+<script src="js/contacts.js"></script>
+</body>
+</html>

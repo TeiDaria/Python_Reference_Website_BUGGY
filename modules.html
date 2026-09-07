@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Справочник Python</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style_basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="icon-title">
+        <img width="60" height="82" src="https://pyfessor.wordpress.com/wp-content/uploads/2023/06/trafareti-zmeya4_1-transformed.png" class="custom-logo" alt="Справочник Python">
+        <a href="index.html" class="site-title">Справочник Python</a>
+    </div>
+
+    <!-- Бургер-меню для мобильных -->
+    <input type="checkbox" id="burger-toggle" class="burger-toggle">
+    <label for="burger-toggle" class="burger-menu">
+        <span class="burger-line"></span>
+    </label>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Обратная связь</a></li>
+            <li><a href="https://t.me/Teidara">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="modules-hero">
+        <div class="container">
+            <h1>Модули и библиотеки Python</h1>
+            <p class="hero-subtitle">Изучите мощные инструменты для расширения возможностей Python</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">200K+</span>
+                    <span class="stat-label">Библиотек в PyPI</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Проектов используют сторонние библиотеки</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Возможностей для разработки</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="modules-intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-card">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Что такое модуль?</h3>
+                    <p>Модуль — это файл с расширением .py, содержащий определения и инструкции Python. Модули позволяют организовать код логически и повторно использовать его.</p>
+                </div>
+                <div class="intro-card">
+                    <i class="fas fa-cube"></i>
+                    <h3>Что такое пакет?</h3>
+                    <p>Пакет — это способ структурирования пространства имен модулей с помощью "точечных имен модулей". Пакет содержит несколько модулей в папке с файлом __init__.py.</p>
+                </div>
+                <div class="intro-card">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Что такое библиотека?</h3>
+                    <p>Библиотека — это коллекция модулей и пакетов, предназначенная для решения определенного класса задач (научные вычисления, веб-разработка, анализ данных и т.д.).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-libraries">
+        <div class="container">
+            <h2>Популярные библиотеки Python</h2>
+            <p class="section-subtitle">Библиотеки, которые должен знать каждый Python-разработчик</p>
+
+            <div class="libraries-grid">
+                <div class="library-card" data-library="numpy">
+                    <div class="card-header">
+                        <i class="fas fa-calculator"></i>
+                        <h3>NumPy</h3>
+                        <span class="library-badge">Научные вычисления</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Фундаментальная библиотека для научных вычислений с поддержкой многомерных массивов и матриц.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 20M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-code-branch"></i> Основа для ML</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>Многомерные массивы</li>
+                            <li>Математические функции</li>
+                            <li>Линейная алгебра</li>
+                            <li>Интеграция с C/C++</li>
+                        </ul>
+                        <code>import numpy as np</code>
+                    </div>
+                </div>
+
+                <div class="library-card" data-library="pandas">
+                    <div class="card-header">
+                        <i class="fas fa-table"></i>
+                        <h3>Pandas</h3>
+                        <span class="library-badge">Анализ данных</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Мощный инструмент для анализа и обработки данных с структурами DataFrame и Series.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 15M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-chart-line"></i> Анализ данных</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>DataFrame и Series</li>
+                            <li>Чтение/запись файлов</li>
+                            <li>Агрегация данных</li>
+                            <li>Временные ряды</li>
+                        </ul>
+                        <code>import pandas as pd</code>
+                    </div>
+                </div>
+
+                <div class="library-card" data-library="matplotlib">
+                    <div class="card-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Matplotlib</h3>
+                        <span class="library-badge">Визуализация</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Комплексная библиотека для создания статических, анимированных и интерактивных визуализаций.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 12M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-paint-brush"></i> Графики и диаграммы</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>Линейные графики</li>
+                            <li>Гистограммы</li>
+                            <li>3D-визуализация</li>
+                            <li>Кастомизация стилей</li>
+                        </ul>
+                        <code>import matplotlib.pyplot as plt</code>
+                    </div>
+                </div>
+
+                <div class="library-card" data-library="requests">
+                    <div class="card-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Requests</h3>
+                        <span class="library-badge">HTTP-запросы</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Элегантная и простая библиотека для отправки HTTP-запросов, созданная для людей.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 10M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-network-wired"></i> Веб-запросы</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>GET/POST запросы</li>
+                            <li>Сессии и куки</li>
+                            <li>SSL верификация</li>
+                            <li>Автоматическое кодирование</li>
+                        </ul>
+                        <code>import requests</code>
+                    </div>
+                </div>
+
+                <div class="library-card" data-library="scikit">
+                    <div class="card-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Scikit-learn</h3>
+                        <span class="library-badge">Машинное <br>обучение</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Библиотека для машинного обучения с простыми и эффективными инструментами.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 8M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-robot"></i> ML алгоритмы</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>Классификация</li>
+                            <li>Регрессия</li>
+                            <li>Кластеризация</li>
+                            <li>Предобработка данных</li>
+                        </ul>
+                        <code>from sklearn import datasets</code>
+                    </div>
+                </div>
+
+                <div class="library-card" data-library="django">
+                    <div class="card-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Django</h3>
+                        <span class="library-badge">Веб-фреймворк</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Высокоуровневый веб-фреймворк для быстрой разработки и чистого дизайна.</p>
+                        <div class="library-info">
+                            <span class="info-item"><i class="fas fa-star"></i> 5M+ загрузок</span>
+                            <span class="info-item"><i class="fas fa-server"></i> Веб-разработка</span>
+                        </div>
+                    </div>
+                    <div class="card-hover">
+                        <h4>Ключевые возможности:</h4>
+                        <ul>
+                            <li>ORM</li>
+                            <li>Админ-панель</li>
+                            <li>Система шаблонов</li>
+                            <li>Встроенная безопасность</li>
+                        </ul>
+                        <code>import django</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="installation-guide">
+        <div class="container">
+            <h2>Установка библиотек</h2>
+            <div class="guide-content">
+                <div class="guide-text">
+                    <h3>Менеджер пакетов pip</h3>
+                    <p>Python использует pip (Package Installer for Python) для установки и управления пакетами из PyPI (Python Package Index).</p>
+
+                    <div class="code-examples">
+                        <div class="code-block">
+                            <h4>Установка библиотеки:</h4>
+                            <pre><code>pip install numpy</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <h4>Установка конкретной версии:</h4>
+                            <pre><code>pip install pandas==1.5.0</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <h4>Установка из requirements.txt:</h4>
+                            <pre><code>pip install -r requirements.txt</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-visual">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-btn red"></span>
+                                <span class="terminal-btn yellow"></span>
+                                <span class="terminal-btn green"></span>
+                            </div>
+                            <span class="terminal-title">terminal</span>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">$ pip install requests</div>
+                            <div class="terminal-line">Collecting requests</div>
+                            <div class="terminal-line">Downloading requests-2.28.2-py3-none-any.whl (62 kB)</div>
+                            <div class="terminal-line">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 1.5 MB/s eta 0:00:00</div>
+                            <div class="terminal-line">Installing collected packages: requests</div>
+                            <div class="terminal-line success">Successfully installed requests-2.28.2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-section">
+        <div class="container">
+            <h2>Исследуйте библиотеки</h2>
+            <div class="interactive-content">
+                <div class="random-library">
+                    <button id="random-library-btn" class="random-btn">
+                        <i class="fas fa-random"></i>
+                        Показать случайную библиотеку
+                    </button>
+                    <div id="random-library-info" class="random-info"></div>
+                </div>
+
+                <div class="search-libraries">
+                    <input type="text" id="library-search" placeholder="Поиск библиотеки...">
+                    <div id="search-results" class="search-results"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="best-practices">
+        <div class="container">
+            <h2>Лучшие практики работы с библиотеками</h2>
+            <div class="practices-grid">
+                <div class="practice-card">
+                    <div class="practice-number">01</div>
+                    <h3>Виртуальные окружения</h3>
+                    <p>Всегда используйте виртуальные окружения для изоляции зависимостей проекта.</p>
+                    <code>python -m venv myenv</code>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-number">02</div>
+                    <h3>Файл requirements.txt</h3>
+                    <p>Сохраняйте список зависимостей в файле requirements.txt для воспроизводимости.</p>
+                    <code>pip freeze > requirements.txt</code>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-number">03</div>
+                    <h3>Семантическое версионирование</h3>
+                    <p>Указывайте версии библиотек для избежания конфликтов при обновлениях.</p>
+                    <code>numpy>=1.21.0,<2.0.0</code>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-number">04</div>
+                    <h3>Регулярное обновление</h3>
+                    <p>Регулярно обновляйте зависимости для получения исправлений безопасности и новых функций.</p>
+                    <code>pip install --upgrade package-name</code>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="grid-footer">
+    <div class="footer-content">
+        <!-- Быстрые ссылки -->
+        <div class="footer-section quick-links">
+            <h3>Быстрые ссылки</h3>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="basics.html">Основы Python</a></li>
+                <li><a href="modules.html">Модули и библиотеки</a></li>
+                <li><a href="practice.html">Мини-практикум</a></li>
+                <li><a href="contacts.html">Форма обратной связи</a></li>
+            </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer-section contact-us">
+            <h3>Контакты</h3>
+            <div class="contact-info">
+                <p>ул. Тверская, 14<br>Москва, 117513, Россия</p>
+                <p>+7 987 123-45-67</p>
+                <p>+7 987 123-45-68</p>
+                <p>example@mail.ru</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://t.me/Teidara" class="social-btn" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://github.com/my_github" class="social-btn" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://youtube.com/my_channel" class="social-btn" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://vk.com/my_profile" class="social-btn" target="_blank">
+            <i class="fab fa-vk"></i>
+        </a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2025 Student MIREA. All Rights Reserved</p>
+    </div>
+</footer>
+<script src="js/modules.js"></script>
+</body>
+</html>
