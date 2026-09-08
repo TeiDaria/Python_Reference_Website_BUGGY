@@ -121,7 +121,7 @@ function initLibrarySearch() {
     const resultsContainer = document.getElementById('search-results');
 
     searchInput.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
+        const query = e.target.value.toLowerCase(); //.trim() убрала, теперь поиск чувствителен к пробелам, ошибка 2
 
         if (query.length === 0) {
             resultsContainer.innerHTML = '';

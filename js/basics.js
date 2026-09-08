@@ -145,11 +145,11 @@ function emulateSimplePythonExecution(code) {
                 // Убираем кавычки для строк
                 if ((varValue.startsWith('"') && varValue.endsWith('"')) ||
                     (varValue.startsWith("'") && varValue.endsWith("'"))) {
-                    userVariables[varName] = varValue.slice(1, -1);
+                    userVariables[varName.toLowerCase()] = varValue.slice(1, -1); //.toLowerCase() было добавлено, ошибка 3, print(f"Значение: {X}") не выведет значение x
                 } else if (!isNaN(varValue)) {
-                    userVariables[varName] = Number(varValue);
+                    userVariables[varName.toLowerCase()] = Number(varValue); //то же самое
                 } else {
-                    userVariables[varName] = varValue;
+                    userVariables[varName.toLowerCase()] = varValue; //то же самое
                 }
             }
         }

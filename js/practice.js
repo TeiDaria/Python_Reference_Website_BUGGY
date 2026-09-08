@@ -15,7 +15,7 @@ const quizConfig = {
         },
         {
             id: 4,
-            correctAnswer: 'a'
+            correctAnswer: 'c' //ответ a правильный, ошибка 1
         },
         {
             id: 5,

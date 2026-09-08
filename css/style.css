@@ -1004,11 +1004,12 @@ a.social-btn i {
     }
 
     /* Показываем меню при клике */
+    /* Ошибка 4, не раскрывается бургер-меню
     .burger-toggle:checked ~ .main-nav {
         visibility: visible;
         opacity: 1;
         transform: translateY(0);
-    }
+    } */
 
     .grid-footer {
         width: 100vw;

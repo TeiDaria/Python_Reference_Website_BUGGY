@@ -6,7 +6,8 @@ const successModal = document.getElementById('successModal');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
 
 // Регулярные выражения для валидации
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailRegex = /^[^\s@]+@[^\s@]+$/; //user@domain без точки и верхнего домена теперь тоже пройдет, ошибка 5
 const nameRegex = /^[a-zA-Zа-яА-ЯёЁ\s-]{2,50}$/;
 
 // Инициализация
