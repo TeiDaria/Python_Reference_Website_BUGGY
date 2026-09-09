@@ -145,11 +145,11 @@ function emulateSimplePythonExecution(code) {
                 // Убираем кавычки для строк
                 if ((varValue.startsWith('"') && varValue.endsWith('"')) ||
                     (varValue.startsWith("'") && varValue.endsWith("'"))) {
-                    userVariables[varName.toLowerCase()] = varValue.slice(1, -1); //.toLowerCase() было добавлено, ошибка 3, print(f"Значение: {X}") не выведет значение x
+                    userVariables[varName] = varValue.slice(1, -1);
                 } else if (!isNaN(varValue)) {
-                    userVariables[varName.toLowerCase()] = Number(varValue); //то же самое
+                    userVariables[varName] = Number(varValue);
                 } else {
-                    userVariables[varName.toLowerCase()] = varValue; //то же самое
+                    userVariables[varName] = varValue;
                 }
             }
         }
@@ -168,7 +168,14 @@ function emulateSimplePythonExecution(code) {
                     result = result.replace(new RegExp(`\\{${varName}\\}`, 'g'), userVariables[varName]);
                 });
 
-                output += result + '\n';
+                //ОШИБКА 3: если в выражении есть оператор +, выдаём NaN
+                if (result.includes('+')) {
+                    output += 'NaN\n';
+                } else {
+                    output += result + '\n';
+                }
+
+                //output += result + '\n';
             }
             // Обычные строки
             else if ((content.startsWith('"') && content.endsWith('"')) ||
